@@ -113,3 +113,31 @@ will automatically be loaded.
 
 This software is licensed under the terms of the ISC License.  
 You can find a copy of the license in the LICENSE file.
+
+---
+
+## Credits
+
+This repository is a fork of the original **hactool** project created by
+[SciresM](https://github.com/SciresM/hactool).
+
+All credit for the original implementation and core functionality belongs
+to SciresM and the contributors of the original project.
+
+## Changes in This Fork
+
+This fork does not modify the core functionality of hactool.
+
+The purpose of this fork is simply to make the project compile and run in
+a **Termux / Android environment**.
+
+Changes include:
+
+- Adjusting build configuration for Termux
+- Fixing compiler compatibility (clang instead of gcc)
+- Providing working build steps for Android / Termux
+- Minor build system fixes required for Termux
+
+Original project:
+https://github.com/SciresM/hactool
+
