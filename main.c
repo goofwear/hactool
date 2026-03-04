@@ -369,7 +369,7 @@ int main(int argc, char **argv) {
                     return EXIT_FAILURE;
                 }
                 nca_ctx.tool_ctx->base_file_type = BASEFILE_FAKE;
-                nca_ctx.tool_ctx->base_file++; /* Guarantees base_file != NULL. I'm so sorry. */
+                nca_ctx.tool_ctx->base_file = (FILE *)1; /* Bionic fix: FILE is opaque */
                 break;
             case 32:
                 tool_ctx.action |= ACTION_ONLYUPDATEDROMFS;

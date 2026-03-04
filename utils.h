@@ -59,7 +59,7 @@ inline int fseeko64(FILE *__stream, long long __off, int __whence)
     extern int fseeko64 (FILE *__stream, _off64_t __off, int __whence);
 #else
     /* off_t is 64-bit with large file support */
-    #define fseeko64 fseek
+    #define fseeko64 fseeko
 #endif
 
 static inline uint64_t media_to_real(uint64_t media) {
